@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% for blog in blogs %}
+        <ul>
+            <li><a href="{{ path('app_blog_detail', {'slug': blog.slug}) }}">{{ blog.title }}</a></li>
+        </ul>
+    {% endfor %}
+{% endblock %}

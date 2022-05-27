@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <p>Date de création : {{ article.createdAt|date('d/m/Y h:m:s') }}</p>
+    <p>Titre : {{ article.title }}</p>
+    <p>Contenu : {{ article.content|raw }}</p>
+{% endblock %}
